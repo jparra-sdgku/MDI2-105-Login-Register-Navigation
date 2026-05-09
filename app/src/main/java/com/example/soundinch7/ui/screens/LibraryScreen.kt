@@ -8,31 +8,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
-//@Composable
-//fun LibraryScreen(){
-//    Box(
-//        modifier = Modifier.fillMaxSize(),
-//        contentAlignment = Alignment.Center
-//
-//    ){
-//        Text(
-//            text = "Library",
-//            style = MaterialTheme.typography.headlineMedium,
-//            color = MaterialTheme.colorScheme.primary
-//        )
-//    }
-//}
-
 @Composable
-fun LibraryScreen() {
+fun LibraryScreen(){
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
-    ) {
+
+    ){
         Text(
-            text = "Welcome to SoundIn",
+            text = "Library",
             style = MaterialTheme.typography.headlineMedium,
             color = MaterialTheme.colorScheme.primary
         )
     }
 }
+
