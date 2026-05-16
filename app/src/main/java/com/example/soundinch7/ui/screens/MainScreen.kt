@@ -16,7 +16,8 @@ import com.example.soundinch7.ui.navigation.SoundInRoutes
 @Composable
 fun MainScreen(
     sessionViewModel: UserSessionViewModel,
-    onLogout: () -> Unit
+    onLogout: () -> Unit,
+
 ){
     val navController = rememberNavController()
     val currentBackStackEntry by navController.currentBackStackEntryAsState()
@@ -44,7 +45,7 @@ fun MainScreen(
             modifier = Modifier.padding(paddingValues)
         ) // end of nav host arguments
         {
-            composable(SoundInRoutes.LIBRARY) {LibraryScreen()}
+            composable(SoundInRoutes.LIBRARY) {LibraryScreen() }
             composable(SoundInRoutes.SEARCH) {SearchScreen()}
             composable (SoundInRoutes.PROFILE) {ProfileScreen(
                 sessionViewModel = sessionViewModel,
